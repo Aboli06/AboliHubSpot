@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="2" name="TestSuite" time="115.817" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/aboli/Documents/Selenium_workgroup/HubSpotProject"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="com.qa.HubspotTestCases.*"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/aboli/Documents/Selenium_workgroup/HubSpotProject"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/gf/rkb70w0d64lblzfgmg4cg79h0000gp/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Applications/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/aboli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Applications/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.3"/>
+    <property name="library.jansi.path" value="/Applications/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/aboli"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="aboli"/>
+    <property name="java.class.path" value="/Applications/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Dtest=com.qa.HubspotTestCases.*"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="/Users/aboli/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.qa.HubspotTestCases.HubSpotHomeTest" name="getHomePageTitleTest" time="50.16">
+    <failure message="Expected condition failed: waiting for title to be &quot;HubSpot Login&quot;. Current title: &quot;Reports dashboard&quot; (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:14cd:303a:d0e8:8be%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:64936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a42ef982133c7fceea65bd75072c12b" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;HubSpot Login&quot;. Current title: &quot;Reports dashboard&quot; (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:14cd:303a:d0e8:8be%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:64936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a42ef982133c7fceea65bd75072c12b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
+	at com.qa.HubSpotUIPages.HubSpotHomePage.getHomePageTitle(HubSpotHomePage.java:30)
+	at com.qa.HubspotTestCases.HubSpotHomeTest.getHomePageTitleTest(HubSpotHomeTest.java:47)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@1517365b
+ Browser name is : chrome
+ Browser name is : chrome
+</system-out>
+    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 1502
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1586604299.221][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+Apr 11, 2020 4:54:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1586604300.851][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604300.952][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604301.054][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604307.505][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604307.607][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604307.718][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604307.821][SEVERE]: Timed out receiving message from renderer: 0.100
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 29438
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1586604311.866][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+Apr 11, 2020 4:55:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1586604314.741][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604314.841][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604314.942][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604315.044][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604315.145][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586604315.252][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.HubspotTestCases.HubSpotHomeTest" name="homePageHeaderTest" time="0.708"/>
+  <testcase classname="com.qa.HubspotTestCases.HubSpotLoginTest" name="verifyLoginPageTitle" time="50.467">
+    <failure message="Expected condition failed: waiting for title to be &quot;HubSpot | Redirecting...&quot;. Current title: &quot;HubSpot Login&quot; (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:14cd:303a:d0e8:8be%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:65014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8baf9066800300fc88a9859edb6ab394" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;HubSpot | Redirecting...&quot;. Current title: &quot;HubSpot Login&quot; (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:14cd:303a:d0e8:8be%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:65014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8baf9066800300fc88a9859edb6ab394
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
+	at com.qa.HubSpotUIPages.HubSpotLoginPage.getTitle(HubSpotLoginPage.java:33)
+	at com.qa.HubspotTestCases.HubSpotLoginTest.verifyLoginPageTitle(HubSpotLoginTest.java:47)
+</failure>
+  </testcase>
+  <testcase classname="com.qa.HubspotTestCases.HubSpotLoginTest" name="verifySignUpLink" time="0.688"/>
+  <testcase classname="com.qa.HubspotTestCases.HubSpotHomeTest" name="getUserNameTest" time="6.499"/>
+  <testcase classname="com.qa.HubspotTestCases.HubSpotLoginTest" name="loginTest" time="7.295"/>
+</testsuite>

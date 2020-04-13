@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 149.028 sec <<< FAILURE!
+getHomePageTitleTest(com.qa.HubspotTestCases.HubSpotHomeTest)  Time elapsed: 50.16 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "HubSpot Login". Current title: "Reports dashboard" (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AbolisMacBook-Pro.local', ip: 'fe80:0:0:0:14cd:303a:d0e8:8be%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:64936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a42ef982133c7fceea65bd75072c12b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
+	at com.qa.HubSpotUIPages.HubSpotHomePage.getHomePageTitle(HubSpotHomePage.java:30)
+	at com.qa.HubspotTestCases.HubSpotHomeTest.getHomePageTitleTest(HubSpotHomeTest.java:47)
+
+verifyLoginPageTitle(com.qa.HubspotTestCases.HubSpotLoginTest)  Time elapsed: 50.467 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "HubSpot | Redirecting...". Current title: "HubSpot Login" (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AbolisMacBook-Pro.local', ip: 'fe80:0:0:0:14cd:303a:d0e8:8be%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:65014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8baf9066800300fc88a9859edb6ab394
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
+	at com.qa.HubSpotUIPages.HubSpotLoginPage.getTitle(HubSpotLoginPage.java:33)
+	at com.qa.HubspotTestCases.HubSpotLoginTest.verifyLoginPageTitle(HubSpotLoginTest.java:47)
+

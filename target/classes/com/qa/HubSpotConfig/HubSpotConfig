@@ -1,0 +1,7 @@
+browser=chrome
+headless= no
+url=https://app.hubspot.com/
+username=abolidoshi@gmail.com
+password=Ab@270681
+accountname=Aboli Doshi
+highlight=yes

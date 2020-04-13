@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">133.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.HubspotTestCases.HubSpotHomeTest</td><td><a href="#m1"><b>getHomePageTitleTest</b>  </a></td><td class="numi">1</td><td>1586604315273</td><td class="numi">50154</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qa.HubspotTestCases.HubSpotLoginTest</td><td><a href="#m2"><b>verifyLoginPageTitle</b>  </a></td><td class="numi">1</td><td>1586604366143</td><td class="numi">50465</td></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.qa.HubspotTestCases.HubSpotHomeTest</td><td><a href="#m3"><b>homePageHeaderTest</b>  </a></td><td class="numi">1</td><td>1586604365430</td><td class="numi">712</td></tr>
+<tr class="passedeven"><td rowspan="1">com.qa.HubspotTestCases.HubSpotLoginTest</td><td><a href="#m4"><b>verifySignUpLink</b>  </a></td><td class="numi">1</td><td>1586604416609</td><td class="numi">689</td></tr>
+<tr class="passedodd"><td rowspan="1">com.qa.HubspotTestCases.HubSpotHomeTest</td><td><a href="#m5"><b>getUserNameTest</b>  </a></td><td class="numi">1</td><td>1586604417298</td><td class="numi">6499</td></tr>
+<tr class="passedeven"><td rowspan="1">com.qa.HubspotTestCases.HubSpotLoginTest</td><td><a href="#m6"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1586604423798</td><td class="numi">7294</td></tr>
+</table>
+<h1>Command line test</h1>
+<h2 id="m1">com.qa.HubspotTestCases.HubSpotHomeTest:getHomePageTitleTest</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for title to be &quot;HubSpot Login&quot;. Current title: &quot;Reports dashboard&quot; (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:14cd:303a:d0e8:8be%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:64936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a42ef982133c7fceea65bd75072c12b</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
+<br/>at com.qa.HubSpotUIPages.HubSpotHomePage.getHomePageTitle(HubSpotHomePage.java:30)
+<br/>at com.qa.HubspotTestCases.HubSpotHomeTest.getHomePageTitleTest(HubSpotHomeTest.java:47)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.qa.HubspotTestCases.HubSpotLoginTest:verifyLoginPageTitle</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for title to be &quot;HubSpot | Redirecting...&quot;. Current title: &quot;HubSpot Login&quot; (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:14cd:303a:d0e8:8be%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:65014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8baf9066800300fc88a9859edb6ab394</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
+<br/>at com.qa.HubSpotUIPages.HubSpotLoginPage.getTitle(HubSpotLoginPage.java:33)
+<br/>at com.qa.HubspotTestCases.HubSpotLoginTest.verifyLoginPageTitle(HubSpotLoginTest.java:47)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.qa.HubspotTestCases.HubSpotHomeTest:homePageHeaderTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.qa.HubspotTestCases.HubSpotLoginTest:verifySignUpLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.qa.HubspotTestCases.HubSpotHomeTest:getUserNameTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.qa.HubspotTestCases.HubSpotLoginTest:loginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
