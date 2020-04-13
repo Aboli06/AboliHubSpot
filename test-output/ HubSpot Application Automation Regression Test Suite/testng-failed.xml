@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ HubSpot Application Automation Regression Test Suite]">
   <listeners>
+    <listener class-name="com.qa.extentReportListner.ExtentReporterNG"/>
     <listener class-name="com.qa.extentReportListner.TestAllureListener"/>
   </listeners>
   <test name="HubSpot Application Automation regression Test(failed)">

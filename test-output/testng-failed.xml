@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [ HubSpot Application Automation Regression Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.extentReportListner.ExtentReporterNG"/>
+    <listener class-name="com.qa.extentReportListner.TestAllureListener"/>
+  </listeners>
+  <test name="HubSpot Application Automation regression Test(failed)">
     <classes>
       <class name="com.qa.HubspotTestCases.HubSpotHomeTest">
         <methods>
@@ -10,6 +14,13 @@
           <include name="getHomePageTitleTest"/>
         </methods>
       </class> <!-- com.qa.HubspotTestCases.HubSpotHomeTest -->
+      <class name="com.qa.HubspotTestCases.HubSpotLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyLoginPageTitle"/>
+        </methods>
+      </class> <!-- com.qa.HubspotTestCases.HubSpotLoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- HubSpot Application Automation regression Test(failed) -->
+</suite> <!-- Failed suite [ HubSpot Application Automation Regression Test Suite] -->

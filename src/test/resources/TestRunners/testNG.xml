@@ -4,7 +4,7 @@
   
   
   <listeners>
- <!--  <listener class-name="com.qa.extentReportListner.ExtentReportListner" /> -->
+   <listener class-name="com.qa.extentReportListner.ExtentReporterNG" /> 
  <!--  <listener class-name="com.qa.extentReportListner.PDFListener" /> -->
  <listener class-name="com.qa.extentReportListner.TestAllureListener" /> 
   

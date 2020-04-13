@@ -31,24 +31,42 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">106.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">HubSpot Application Automation regression Test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">207.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.qa.HubspotTestCases.HubSpotHomeTest</td><td><a href="#m1"><b>getHomePageTitleTest</b>  </a></td><td class="numi">1</td><td>1586762182286</td><td class="numi">65112</td></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">com.qa.HubspotTestCases.HubSpotHomeTest</td><td><a href="#m2"><b>getUserNameTest</b>  </a></td><td class="numi">1</td><td>1586762263296</td><td class="numi">11439</td></tr><tr class="passedodd"><td><a href="#m3"><b>homePageHeaderTest</b>  </a></td><td class="numi">1</td><td>1586762252523</td><td class="numi">10771</td></tr>
+<tr><th colspan="4">HubSpot Application Automation regression Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.HubspotTestCases.HubSpotLoginTest</td><td><a href="#m1"><b>verifyLoginPageTitle</b>  </a></td><td class="numi">1</td><td>1586776585510</td><td class="numi">60126</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qa.HubspotTestCases.HubSpotHomeTest</td><td><a href="#m2"><b>getHomePageTitleTest</b>  </a></td><td class="numi">1</td><td>1586776673930</td><td class="numi">60085</td></tr>
+<tr><th colspan="4">HubSpot Application Automation regression Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.qa.HubspotTestCases.HubSpotLoginTest</td><td><a href="#m3"><b>verifySignUpLink</b>  </a></td><td class="numi">1</td><td>1586776650682</td><td class="numi">10720</td></tr><tr class="passedodd"><td><a href="#m4"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1586776661404</td><td class="numi">12523</td></tr>
+<tr class="passedeven"><td rowspan="2">com.qa.HubspotTestCases.HubSpotHomeTest</td><td><a href="#m5"><b>homePageHeaderTest</b>  </a></td><td class="numi">1</td><td>1586776739033</td><td class="numi">10755</td></tr><tr class="passedeven"><td><a href="#m6"><b>getUserNameTest</b>  </a></td><td class="numi">1</td><td>1586776749790</td><td class="numi">11470</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">com.qa.HubspotTestCases.HubSpotHomeTest:getHomePageTitleTest</h2>
+<h1>HubSpot Application Automation regression Test</h1>
+<h2 id="m1">com.qa.HubspotTestCases.HubSpotLoginTest:verifyLoginPageTitle</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for title to be &quot;HubSpot | Redirecting...&quot;. Current title: &quot;HubSpot Login&quot; (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:fc:ecc4:5405:df6e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:54992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9fd4378487ab64357273cc5f60147e1c</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
+<br/>at com.qa.HubSpotUIPages.HubSpotLoginPage.getTitle(HubSpotLoginPage.java:33)
+<br/>at com.qa.HubspotTestCases.HubSpotLoginTest.verifyLoginPageTitle(HubSpotLoginTest.java:47)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.qa.HubspotTestCases.HubSpotHomeTest:getHomePageTitleTest</h2>
 <div style="padding-left:3em">
 <p>Expected condition failed: waiting for title to be &quot;HubSpot Login&quot;. Current title: &quot;Reports dashboard&quot; (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AbolisMacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:fc:ecc4:5405:df6e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.3&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:50392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fdbf34b6adbb8a07d6921fc18dbe4e65</p>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/gf/rkb70w0d64l...}, goog:chromeOptions: {debuggerAddress: localhost:54926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c4e4c1f6e5ba05c42771f77c5aab58f3</p>
 org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 <br/>at com.qa.HubSpotUtil.ElementsUtil.waitForTitle(ElementsUtil.java:38)
@@ -57,8 +75,12 @@ org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.qa.HubspotTestCases.HubSpotHomeTest:homePageHeaderTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">com.qa.HubspotTestCases.HubSpotHomeTest:getUserNameTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.qa.HubspotTestCases.HubSpotHomeTest:homePageHeaderTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.qa.HubspotTestCases.HubSpotLoginTest:loginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.qa.HubspotTestCases.HubSpotLoginTest:verifySignUpLink</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
