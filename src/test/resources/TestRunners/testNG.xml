@@ -14,7 +14,8 @@
     <classes>
      <class name="com.qa.HubspotTestCases.HubSpotLoginTest"></class>
       <class name="com.qa.HubspotTestCases.HubSpotHomeTest"></class>
-    
+    <class name="com.qa.HubspotTestCases.ContactPageTest"></class>
+      
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
