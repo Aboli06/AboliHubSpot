@@ -3,12 +3,12 @@
 <suite name=" HubSpot Application Automation Regression Test Suite">
   
   
-  <listeners>
+ <!-- <listeners> -->
  <!--  <listener class-name="com.qa.extentReportListner.ExtentReporterNG" />  -->
  <!--  <listener class-name="com.qa.extentReportListner.PDFListener" /> -->
 <!-- <listener class-name="com.qa.extentReportListner.TestAllureListener" />  -->
   
-  </listeners>  
+<!--  </listeners>  -->
   
   <test name="HubSpot Application Automation regression Test">
     <classes>
